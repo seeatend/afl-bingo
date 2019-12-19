@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  color: $primary;
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: .5px;
+  font-family: 'Titillium-Regular';
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  .page-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+  }
+}
+
+.page-img {
+  width: 100%;
+}
+
+button {
+  position: absolute;
+  color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.ReactModal__Body--open .root {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.ReactModal__Overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.72) !important;
+
+  .ReactModal__Content:focus {
+    outline: none;
+  }
+}
+
+.bold {
+  font-family: 'Titillium-SemiBold';
+}
